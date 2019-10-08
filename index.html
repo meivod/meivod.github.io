@@ -1,44 +1,393 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta id="viewport" name="viewport" content="width=device-width, minimal-ui, initial-scale=1.0, maximum-scale=1.01, user-scalable=1">
-    <title>色猫视频地址发布页,色猫吧,色猫社区,高清AV盛宴,尽在色猫AV!最新地址发布页</title>
-    <meta name="keywords" content="91porn,91视频最新地址,v2porn最新地址,唐朝AV,成人视频地址,看B,色猫视频,色猫地址发布页,色猫视频最新地址,成人视频,国产自拍,在线视频地址发布页"/>
-	<meta name="description" content="色猫AV,secat,高清AV盛宴,尽在色猫视频AV!独家娱圈女星爆料发布源。华人圈中最高清视频，享受尽在两手之间"/>
-    <link href="css/style.css?ver=1" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  </head>
-  <body>
-    <div class="bannerWrap">
-      <div class="logoBlockWrap">
-        <h1><img src="images/logo.png"></h1>
-        <h2>色猫视频社区 <br>secat.top</h2>
-        <p>独家娱圈女星爆料的发布源<br>华人圈中 <i>最高清视频 图片 小说 漫画</i><br>享受尽在两手之间</p>
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>色猫视频AV_奇色视频AV-防屏蔽网址导航</title>
+    <link rel="stylesheet" href="css/core.css?ver=5">
+	<base target="_blank">
+</head>
+
+<body style="padding-top:20px">
+    <div class="header clearfix">
+        <div class="logo">
+            <img src="images/logo.png?ver=1" height="100">
+        </div>
+        <div class="link">
+        	<label><a href="javascript:addFavorite();">收藏本站</a></label>
+        </div>
     </div>
-    <div class="container">
-      <!--<div class="warningWrap"><i></i>
-        <p>近日各大杀毒软件提示色猫是恶意软件，请大家不要相信，色猫不会放恶意程序，本站有广告和收费 VIP 盈利，不会去破环用户手机，请大家安心使用!</p>
-      </div>-->
-      <ul class="btnWarp">
-        <li><a class="btn new hot" href="https://www.secat.top">快速登录网址一www.secat.top</a></li>
-        <li><a class="btn hot" href="https://www.qisev.top">快速登录网址二www.qisev.top</a></li>
-        <li><a class="btn hot" href="https://www.mttun.com">快速登录网址三www.mttun.com</a></li>
-        <li><a class="btn hot" href="https://www.prvod.com">快速登录网址四www.prvod.com</a></li>
-        <li><a class="btn hot" href="https://a.mttun.com">快速登录网址五a.mttun.com</a></li>
-        <li><a class="btn hot" href="http://www.meivod.com">快速登录网址六www.meivod.com</a></li>
-      </ul>
-      <div class="wechatWrap">
-        <div class="qrcode"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAXVUlEQVR4Xu2d4XZbRw6D4/d/6Oy5btKzqR3NhxEoDq/Qv0uBBIiBKTfNfvz48ePnj/zzrQI/fzJpPj4+bqWgm7cb7xK7AvNWS4RkLucyl0PAO5W9q8ncvN14CQDfK0sAPNCywri+1dUhuXm78RIAvt0nABIAXxRwP1g3XgIgAeBTIAGQAHiJm85skgsgAZAAOPNtvmSqBEACIAHwkqd2ZpMEQAIgAXDm23zJVAmABEAC4CVP7cwmCYAEQALgzLf5kqlwANB/lfOSqZ9sQv/kHuVM8ZSx3b0pnjLjhFq6mzvpQzlf+0sAHHoBUEPSZVO8CY9amfEd9aGcEwALJ9FHowhOzevuTfHofFPq6G7upA/lnABIAEx5x9tz0seQADA9hu1NvfCDblNQPIUiNSTtTfGUGSfUvqM+lHMuAFPoKYLTR0MfLO1N8eh8U+reUR/KOQGQAJjyjrfnpI/hTgFJOScAEgDbD2vKB+ljSACYHsMEY7hNQfEUbaghaW+Kp8w4ofYd9aGccwGYQk8RnD4a+mBpb4pH55tS9476UM4lAaA0d5uImpzO6Ma7+FZgunWkeG4uFI/O92lw+Pc10t4UT5mR1lbMaP+TgHcSqELwCkxqIHedmwvFU3hQP9LeFE+ZkdZWzJgAeKB+heAVmNRA7jo3F4qn8KAPlvameMqMtLZixgRAAoD670ud25AUTxmYPljam+IpM9LaihkTAAkA6r8EgPA7hW1RX+zHBMCLBa9I8QqzEUw3F4pHZvtdQ39i094UT5mR1lbMmABIAFD/5QLIBbD2yp0SsiJxKzDXW6mpcHOheAob6kfam+IpM9LaihlzAeQCoP7LBZALYO2VOyVkReJWYK63UlPh5kLxFDbUj7Q3xVNmpLUVM+YCMFwAdIFXndtAFaagfGhvildRR/WmXCheBZeKGRMACYBtr1JDbjcwfJA+WMqF4hlGL//K9fkDif7fg7+jQJSzsmy3geiM7r4XZ9pb0cddS3lTLhTPzUPRW5kxAZALYNur9NFsNzB8kD4GyoXiGUbPBaCK6F4ixVPmdBuIzujuq/xEUvRx11LenTpSzhUz5gLIBUD9t/0TabuB4YMJgMciJgASANvPjP5E2m5g+GACIAHwRQG3KRSf0t4Ukz5Cd998BaAb8tVV7DoXQC6AbYdSQ243MHyQBh/lQvEMo29/5VJmTAAkALa9Sh/NdgPDB+ljoFwonmH0BIAqonuJbjyFD+2tYJ5eqzwuqg/FdONVaF0xYy4AwwVATaaYgi5bwTy9VtGR6kMx3XgVWlfMmABIAFR4dQuTPlblF5AUs+JxbYnwYj8mAF4sODUFNSTFm1BHH2sC4PE2FR0TAAmAY7JBMS4NSIrpxqsQtWLGBEACoMKrW5j0seYCyAXwrQLuhHTjKa+C9lYwT69NADzeEPWEomMugFwAx+SCYlz3Y3DjVYhaMWMCIAFQ4dUtzARALoAt4/z+kDsh3XgKOdpbwTy9NgGQAHjKo/TRUKO58RRytLeCeXot3Ut+CXjwLwFPN9k1HzVa5yOkM1boTXnTGSleBZcJM7p5U86fb8H9dwK6yVTgUYEmGLdCH8r7TjpSzhV6uzHpXhIAC+U7TaEs0W0gypvOSPHcPKZce27edC8JgATAtwrQB0uNRvHcDyEBsFY0XwEeaDTBuOsV6xWUdwJA1/YVn6B7yQWQCyAXwC8FaOi94gE/2yMBsFCQCtRpCjrjs2b57vOUN52R4lVwmTCjmzflnAsgF0AugFwAP36SBOpMcTKfUkMTspMznVHhTWspbzojxaPzKXUTZlT4kFrKORdALoBcALkA2AVAkuduNfQnl5K4bkw33rVDN6Ybr2LGu3mX8sH/GpAC3qlugnEz42PHKeF8J+9SLgmAB0rlcXke1wQd6YO5W10CIAHwRQH3g3Xj5SuAL4YSAAmABIDvPY1DSgAkABIA456tb+AEQAIgAeB7T+OQEgAJgATAuGfrGzgBkABIAPje0zikBEACIAEw7tn6Bv74Sf8dja9nkIAC7j/Aoqy5szeQJiVGBRIARjGdUJ2PsLO3U8NgrRVIAKw1aqnofISdvVvEfuOmCYBDl9/5CDt7H7qO246VADh0tZ2PsLP3oeu47VgJgENX2/kIO3sfuo7bjpUAOHS1nY+ws/eh67jtWAmAQ1fb+Qg7ex+6jtuOlQA4dLWdj7Cz96HruO1YCYBDV9v5CDt7H7qO246F/yiw8ifJiFpuk5GeJ9RQHak+brxLowrMLu0pFzof3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHRMAdPOmOmpIajQ33hTj0nVQfSge3csUHXEAUIGo4IqQtDetozNSvIq6Tn0q+BBMZS9UH4pJ8QiP7hrK+ZozAdC9rb/0v5MhqcSScT8u667/oZh30ptyTgCs/dNWcSdDUhEl4yYA/iqrpOP1H3/RBZE62rzT4HRGwreqplOfKk4rXGUvVB+KSfFWHE743ynnXAAnbCtfAf5VQDJuLoBcALvvVzHabo9nP3enn0hUC2UvVB+KSfEol846yjkXQOeWFr3vZEgqs2TcXAC5AKix/lunGG23x7OfSwA8VpDqQ3dN8Z7d6ys+TznnAnjFNjZ73MmQVALJuLkAcgFQY+UC2FXqtZ9LAHj0lnSk//fg7p9IdEilrxvTjaes192b4n2ehQN+ulI+lAvdDe1boSOdUeGM/1pwBZQMSoVU+rox3XhEl9817t4Ur8K4yg6pRpSPuzftW6Ej1UbhnAB4oCpdtiI4XaK7N8WrMO4Efdx7qdCRzqjonQBIAHxRgBqIhgrFowa/6rp6074JgMU2qZCKedyYbrxOg1MuFcZVdkg1onzcvWnfCh2pNgrnXAC5AHIB0JclXB4JgFwAgq2+ltKfNDTtKV6FcemMimCUj7s37VuhI9VH4ZwLIBdALgD6snIBCErlAnhKLPqThqY9xav4yUVnVASjfNy9ad8KHak+CudcALkAcgHQl3XHC8D9F4JQLWmSKmnm7k3xlBkpb3dvd1/lJxzlotS5+dAdKn0ppsLbXWv/OwHpgFTIChFpb8pFmbGrt7tvAmDtDsUXa7SaigSAQVdl0e6HSHu7+yYA1sahu1kj1VUkAAzaKot2P0Ta2903AbA2Dt3NGqmuIgFg0FZZtPsh0t7uvgmAtXHobtZIdRUJAIO2yqLdD5H2dvdNAKyNQ3ezRqqrSAAYtFUW7X6ItLe7bwJgbRy6mzVSXUUCwKCtsmj3Q6S93X0TAGvj0N2skeoqEgAGbZVFux8i7e3umwBYG4fuZo1UV5EAMGirLNr9EGlvd98EwNo4dDdrpLqKtwwAt5wVj8s9o2JGNx+lN+VNZ6S9KR6dr7OOcv4M8Xf8o8Du5Uwwj2IKNx+lN90NnZH2pnh0vs46yjkBYNrSBPMopnDzUXrTldAZaW+KR+frrKOcEwCmLU0wj2IKNx+lN10JnZH2pnh0vs46yjkBYNrSBPMopnDzUXrTldAZaW+KR+frrKOcEwCmLU0wj2IKNx+lN10JnZH2pnh0vs46yjkBYNrSBPMopnDzUXrTldAZaW+KR+frrKOcEwCmLU0wj2IKNx+lN10JnZH2pnh0vs46yjkBYNrSBPMopnDzUXrTldAZaW+KR+frrKOcEwCmLU0wj2IKNx+lN10JnZH2pnh0vs46yjkBYNrSBPMopnDzUXrTldAZaW+KR+frrKOcpQDoEkghQ0Xv4kLn666jmlMdKV4Fbzoj7a1w6eqt9MV/FFgBpWKSOkVwgnfVdHGh83XXUc2pjhSvgjedkfZWuHT1VvomAOjm36iOmpwajeJVSExnpL0VLl29lb4JALr5N6qjJqdGo3gVEtMZaW+FS1dvpW8CgG7+jeqoyanRKF6FxHRG2lvh0tVb6ZsAoJt/ozpqcmo0ilchMZ2R9la4dPVW+iYA6ObfqI6anBqN4lVITGekvRUuXb2VvgkAuvk3qqMmp0ajeBUS0xlpb4VLV2+lbwKAbv6N6qjJqdEoXoXEdEbaW+HS1VvpmwCgm3+jOmpyajSKVyExnZH2Vrh09Vb64gCgArnrJDIfF517/EN5K4Z0K+OekeJdPNy8aW93X/dOVLwEgKrYi+onGNI9I8VLAPhMmADwaWlFoo+h8yeSe0aKlwDwWS0B4NPSikQfQwLAI/sEvT1M/0RJAFSoasCcYEj3jBQvF4DBYL8gEgA+La1I9DHkAvDIPkFvD9NcABU62jEnGNI9I8XLBeCzWy4An5ZWJPoYcgF4ZJ+gt4dpLoAKHe2YEwzpnpHi5QLw2S0XgE9LKxJ9DLkAPLJP0NvDdPMCcAvkxlPEob0VTFrb9WArOFMuE3pXcKGY1DtUR6UvvgDczd14VMSrjvZWMGmtshyKSeoqOFMuE3pXcKGYZH+Kb5W+CQCqvqlOWY6p5SfMhEeo8KU6Ut5uvCm/p0gAKK4z1FKjGVr9AUEfgtKXcpnQu4ILxaSaUx2VvgkAqr6pTlmOqWUuACAk3Qt9hLkAFqJTIeliwI7/LaG9FUxaW8GH9K7gTLlM6F3BhWKS/Slf45S+uQCo+qY6ZTmmlrkAgJB0L0qYUUwwnrRDpW8CgKpvqlOWY2opmUfpSbkoj4b2d/d24+UrQL4CfKsANRp9CLRuwiOkXJTHRXnTvVA8ZUbKm/amXD5nvP4NERnA3dyNRzj8rqG9FUxaqyyHYpK6Cs6Uy4TeFVwoJtnfmN8BUDJucaoEInwqDE76dtdU7LCbk7M/9YVbR9q35AKgArpJJwCo8r66ih36putHog/RrSPtmwAweUQR3NTyCBi3cY8gZRyC+sKtI+2bADAtWxHc1PIIGLdxjyBlHIL6wq0j7ZsAMC1bEdzU8ggYt3GPIGUcgvrCrSPtmwAwLVsR3NTyCBi3cY8gZRyC+sKtI+2bADAtWxHc1PIIGLdxjyBlHIL6wq0j7ZsAMC1bEdzU8ggYt3GPIGUcgvrCrSPtmwAwLVsR3NTyCBi3cY8gZRyC+sKtI+2bADAtWxHc1PIIGLdxjyBlHIL6wq0j7ZsAMC1bEdzU8ggYt3GPIGUcgvrCrSPt+xkAP5Vqozh3glIWSOVWMLu0pFzofApnd+/OGRXeZE5FmwQAUXRRoyyQLkfBNFDYgqBcKLjC2d27c0aFN5lT0SYBQBRNAHyrgGI0IrPyENy9yXyfJ/PH9R/Qsn/ojAom6Uz75isAURPUKAuky1EwwYglJZQLba5wdvfunFHhTeZUtMkFQBTNBZAL4JcCymOlD1HBJHalfXMBEDVBjbJAuhwFE4xYUkK50OYKZ3fvzhkV3mRORZtcAETRXAC5AHIBGF7KTSGUBKfprGB2yUq50PkUzu7enTMqvMmcija5AIiiuQByAeQCMLyUm0IoCU7TWcHskpVyofMpnN29O2dUeJM5FW3w3wpMGt+thgqpLJBiUi1pb3dfOp9SR7lcmJQPxXTjKTMqGpFayvnCSgA8UHSCKeiyKRdisKoaykV5XBST6kPxlBndeiozJgASAG7/beMpxnU/WDdeAmDbBud8cIIp6KOhXDrVp1yUx0UxqT4UT5nRrbkyYy6AXABu/23jKcZ1P1g3XgJg2wbnfHCCKeijoVw61adclMdFMak+FE+Z0a25MmMugFwAbv9t4ynGdT9YN14CYNsG53xwginoo6FcOtWnXJTHRTGpPhRPmdGtuTJjLoBcAG7/beMpxnU/WDdeAmDbBud8cIIp6KOhXDrVp1yUx0UxqT4UT5nRrbkyI74AqEBuMhV4VCDKmeIppqCYE2as2CHl7e5N96Lsms6o9MaY15+qJMVdgpPZ1BoqJOVM8RRTUMwJM6r7IfWUN8FSauhelF3T/kpvjJkA+LtU1GTKYtyYbjzFuApvakhaR3lTPFqncHbPqPTGfBIACYD/KkCNW2FIalw6I8WjdQpn94xKb8wnAZAASADQ51LztwLT7gkAqtSijgpJE5ziVZzXE2Y0re0PGMrb3bti13RGpTfGzAWQCyAXAH0uuQC4UgdX0iSlP2UoXi4Anynobnwd/0Gq2DWdUemNMXMB5ALIBUCfSwKAK3VwJU1S+lOG4uUC8JmC7sbXMRcA0lJ5DAhQKKKmoDO68QQquHTCjJjMzQrpbiht6luK9/mVxv0VoGJISogKTmd041EeSt2EGRU+d6qlu6GcqW8pXgJgoRRdYMVi6BInzEi53K2O7obyrvBZLoAH6tMFViyGmmLCjJTL3erobijvCp8lABIA1H+pExVIAIiCPVtOBadJ6sZ7lt93n58wYwXvCZh0N5QL9S3Fy+8A8jsAxSupFRVIAIiCPVtOBadJ6sZ7ll8ugAoF6zCpf+gE1LcULxdALgDFK6kVFUgAiII9W04Fp0nqxnuWXy6ACgXrMKl/6ATUtxQvF0AuAMUrqRUVSACIgj1bTgWnSerGu/i5MSnes9p+93mqI+1dwYXOWNGb8qZ1lAvFywXQcAFQo9FlUzzFFLSWzkjxKrjQGSt6U960jnKheAmABIDilS+1bkNWPEI6Y0Xvp8T95sOUi9I3fxLwgVrUFMpi3JgUTzEFrVV4E8wKLnTGit6Es1JDuUiY+a8B/y4XNYWyGDcmxVNMQWsV3gSzggudsaI34azUUC4SZgIgAaAY5v9r3YaseIR0xoreu7r+7XOUi9I3XwHyFUDxyx+1bkNWPEI6Y0XvbWH/8kHKRembAEgAKH5JAGyr9fwHEwALDWmKUyHdeNf4bkyK97z9viJQHWnvCi50xorelDeto1wo3lWXCyAXgOKXXADbaj3/wQTAoRfA86vd/+lKf3Ip5qnAJBrRvp8/uT6un13rfxTMNRrvS7BOqMkFYLgAKhbpNjjFq/iaQvVRHivlo2CSOWlfgnVCTQIgAfBFAfpo3I+B9s0F4IuOBEACIAEgvCd36AmtS0oTAAmABIDwtBIAC7E6BaInJJ2R4gn+waXuGSlefgfweEWKjnjZjYW5AHIB5AIQHmACIBeAYJf9Umo0eqVQvFwAuQC+VaDCaPvP4/tPumekeG4eFb/lTgB4tqTo6OlYi5KvAPkKkK8AwhtLAAhinVpKl1hxAXT2du+DcqF9K/Smvd1cOr9KUc6fl6b77wNQmnfV0mVXGLKzt1tvyoX2rdCb9nZzSQBQ5Rvq6LIrDNnZ2y015UL7VuhNe7u5JACo8g11dNkVhuzs7ZaacqF9K/Smvd1cEgBU+YY6uuwKQ3b2dktNudC+FXrT3m4uCQCqfEMdXXaFITt7u6WmXGjfCr1pbzeXBABVvqGOLrvCkJ293VJTLrRvhd60t5tLAoAq31BHl11hyM7ebqkpF9q3Qm/a280lAUCVb6ijy64wZGdvt9SUC+1boTft7eaSAKDKN9TRZVcYsrO3W2rKhfat0Jv2dnO5XQBQIe9URw2pmIdiduqo8CFzUs7uvsojJDzUGsqH6kP7074XHv6TgLT5neroYhTBKWanjgofMifl7O6bAFhvJwHwQKMK41LM9erqKtwPkXJ2900ArD2SAEgAfFHA/RATAI8fItVn/Zz/qVD2lwBIACQA6MsS6+hDTACIwr6qnC6GLrr7JKW6KXwIZoWOpG+33lRHqg/lTPvml4ALReliFMEpJl12RZ3Ch/SnnN19EwDr7eQrQL4C5CvA+p1sVdBAowFJh6B9cwHkAvhWAcVAxJTU4O6+uQDW28kFkAsgF8D6nWxV0ECjAUmHoH1zAeQCyAVAX9VGHX2InQHwP/DR2XZnRir4AAAAAElFTkSuQmCC"></div>
-        <h3>关注公众号</h3>
-        <p>每天更新视频、网址</p>
-      </div>
-      <p class="footer">色猫视频 AV-色猫 TV(WWW.SECAT.TOP)，本站所有视频图片，未经许可，严禁转载和发布。</p>
-  
+    <div class="main">
+        <div class="row clearfix">
+            <div class="tit-div">
+                <div class="wrap blue">
+                    <div class="container self"><i class="icon_earth"></i><span>QISEAV<br>最新入口</span></div>
+                </div>
+            </div>
+            <div class="main-div">
+                <div class="wrap clearfix">
+                    <div class="tabboxX2 box1">
+                            <div class="container">
+                                <div class="t3 line1">
+									<a class="addintr" target="_blank" href="/#"><font color="DarkMagenta ">奇色TV</font></a></div>
+                                <div class="tmid tl">
+									<a class="addintr" target="_blank" href="https://www.qisev.top" rel="nofollow" ><font color="Black">立即打开</font></a></div>
+                                <div class="t3 tl">
+									<a class="addintr" target="_blank" href="https://www.qisev.top" rel="nofollow"><font color="red">www.qisev.top</font></a></div>
+                            </div>
+                    </div>
+                    <div class="tabboxX2 box1">
+                            <div class="container">
+                                <div class="t3 line1">
+									<a class="addintr" target="_blank" href="/#"><font color="DarkMagenta ">色猫视频</font></a></div>
+                                <div class="tmid tl">
+									<a class="addintr" target="_blank" href="https://www.secat.top" rel="nofollow"><font color="Black">立即打开</font></a></div>
+                                <div class="t3 tl">
+									<a  class="addintr" target="_blank" href="https://www.secat.top" rel="nofollow"><font color="green">www.secat.top</font></a></div>
+                            </div>
+                    </div>
+					    <div class="tabboxX2 box1">
+                            <div class="container">
+                                <div class="t3 line1">
+									<a class="addintr" target="_blank" href="/#"><font color="DarkMagenta "><font color="DarkMagenta ">蜜桃臀</font></font></a></div>
+                                <div class="tmid tl">
+									<a class="addintr" target="_blank" href="https://www.mttun.com" rel="nofollow"><font color="Black">立即打开</font></a></div>	
+                                <div class="t3 tl">
+									<a class="addintr" target="_blank" href="https://www.mttun.com" rel="nofollow"><font color="Blue">www.mttun.com</font></a></div>
+                            </div>
+                    </div>
+					    <div class="tabboxX2 box1">
+                            <div class="container">
+                                <div class="t3 line1">
+									<a class="addintr" target="_blank" href="/#"><font color="DarkMagenta ">久草cms</font></a></div>
+                                <div class="tmid tl">
+									<a class="addintr" target="_blank" href="https://a.mttun.com/" rel="nofollow"><font color="Black">立即打开</font></a></div>
+                                <div class="t3 tl">
+									<a class="addintr" target="_blank" href="https://a.mttun.com/" rel="nofollow"><font color="red">a.mttun.com</font></a></div>
+                            </div>
+                    </div>
+					   
+					    <div class="tabboxX2 box1">
+                            <div class="container">
+                                <div class="t3 line1">
+									<a class="addintr" target="_blank" href="/#"><font color="DarkMagenta ">美播视频</font></a></div>
+                                <div class="tmid tl">
+									<a class="addintr" target="_blank" href="http://www.meivod.com" rel="nofollow"><font color="Black">立即打开</font></a></div>
+                                <div class="t3 tl">
+									<a class="addintr" target="_blank" href="http://www.meivod.com" rel="nofollow"><font color="BlueViolet">www.meivod.com</font></a></div>
+                            </div>
+                    </div>
+            
+                    <div class="tabboxX2">
+                        <a href="/#" class="roadlink addintr" target="_blank">
+                            <div class="container">
+                                <div class="t3 line1"><i></i><span><font color="Black">网速测试</font></span></div>
+                                <div class="tmid tl"><span><font color="Black"><font color="ForestGreen">平均打开速度</font></font></span></div>
+                                <div class="t3 tl">
+									<a class="addintr" target="_blank" href="http://www.qisev.com" rel="nofollow"><font color="red">0.11秒</font></a></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+    <div class="tit-div">
+        <div class="wrap wathet">
+            <div class="container"><i class="icon_www"></i><span>常用地址</span></div>
+        </div>
     </div>
-<!-- 站长统计代码 --> <div style="display: none;"><script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278023307&web_id=1278023307"></script></div><!-- 站长统计代码 -->
-  </body>
+    <div class="main-div">
+        <div class="wrap">
+            <div class="tabbox">
+                <div class="links">
+                    <a href="https://www.baidu.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_baidu"></i><span>百度</span>
+                        </div>
+                    </a>
+                    <a href="http://www.youku.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_youku"></i><span>优酷</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.qq.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_qq"></i><span>腾讯QQ</span>
+                        </div>
+                    </a>
+                    <a href="http://www.jd.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_jd"></i><span>京东商城</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                   <a href="fang/index.html"  style="color: red;">
+                        <div class="container">
+                            </i><span>防劫持教程</span>
+                        </div>
+                    </a>
+                    <a href="http://www.12306.cn/mormhweb/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_12306"></i><span>12306</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.sohu.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_sohu"></i><span>搜狐</span>
+                        </div>
+                    </a>
+                    <a href="http://www.ctrip.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_xc"></i><span>携程网</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.163.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_163"></i><span>网易</span>
+                        </div>
+                    </a>
+                    <a href="http://www.4399.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_4399"></i><span>4399小游戏</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="https://www.taobao.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_tb"></i><span>淘宝</span>
+                        </div>
+                    </a>
+                    <a href="http://www.58.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_58"></i><span>58同城</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="tit-div">
+        <div class="wrap wathet">
+            <div class="container"><i class="icon_bank"></i><span>常用网银</span></div>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="wrap">
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.icbc.com.cn/icbc/" target="_blank">
+                        <div class="container">
+                            <i class="icon_gs"></i><span>工商银行</span>
+                        </div>
+                    </a>
+                    <a href="http://www.cmbchina.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_zs"></i><span>招商银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.boc.cn/" target="_blank">
+                        <div class="container">
+                            <i class="icon_zg"></i><span>中国银行</span>
+                        </div>
+                    </a>
+                    <a href="http://www.cebbank.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_gd"></i><span>光大银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.ccb.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_js"></i><span>建设银行</span>
+                        </div>
+                    </a>
+                    <a href="http://www.cib.com.cn/cn/index.html" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_xy"></i><span>兴业银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.abchina.com/cn/" target="_blank">
+                        <div class="container">
+                            <i class="icon_ny"></i><span>农业银行</span>
+                        </div>
+                    </a>
+                    <a href="http://www.hxb.com.cn/home/cn/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_hx"></i><span>华夏银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.psbc.com/cn/index.html" target="_blank">
+                        <div class="container">
+                            <i class="icon_yz"></i><span>邮政储蓄</span>
+                        </div>
+                    </a>
+                    <a href="http://www.bankcomm.com/BankCommSite/default.shtml" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_jt"></i><span>交通银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://www.cmbc.com.cn/" target="_blank">
+                        <div class="container">
+                            <i class="icon_ms"></i><span>民生银行</span>
+                        </div>
+                    </a>
+                    <a href="http://www.cgbchina.com.cn/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_gf"></i><span>广发银行</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="tit-div">
+        <div class="wrap wathet">
+            <div class="container"><i class="icon_inf"></i><span>常用咨询</span></div>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="wrap">
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.sina.com.cn/" target="_blank">
+                        <div class="container">
+                            <i class="icon_sina"></i><span>新浪新闻</span>
+                        </div>
+                    </a>
+                    <a href="http://www.zaobao.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_lh"></i><span>联合早报</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.ifeng.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_fh"></i><span>凤凰资讯</span>
+                        </div>
+                    </a>
+                    <a href="http://www.people.com.cn/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_rm"></i><span>人民网</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.qq.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_qq"></i><span>腾讯新闻</span>
+                        </div>
+                    </a>
+                    <a href="http://www.china.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_zh"></i><span>中华网</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.sohu.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_sohu"></i><span>搜狐新闻</span>
+                        </div>
+                    </a>
+                    <a href="http://news.cctv.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_cctv"></i><span>CCTV新闻</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.163.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_163"></i><span>网易新闻</span>
+                        </div>
+                    </a>
+                    <a href="http://www.xinhuanet.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_xh"></i><span>新华网</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tabbox">
+                <div class="links">
+                    <a href="http://news.baidu.com/" target="_blank">
+                        <div class="container">
+                            <i class="icon_baidu"></i><span>百度新闻</span>
+                        </div>
+                    </a>
+                    <a href="http://www.huanqiu.com/" target="_blank" class="second">
+                        <div class="container">
+                            <i class="icon_hq"></i><span>环球时报</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="footer">
+        &copy;2015-2019 www.secat.cc All Rights Reserved.
+    </div>
+    <script src="js/main.js"></script>
+
+
+
+
+</body><script type="text/javascript" id="useragent-switcher">navigator.__defineGetter__("userAgent", function() {return "Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/13C71 Safari/601.1.46"})</script>
 </html>

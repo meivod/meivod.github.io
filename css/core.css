@@ -1,0 +1,147 @@
+
+/* Code tidied up by ScrapBook */
+a, abbr, acronym, address, b, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, hr, i, img, input, ins, kbd, label, legend, li, object, ol, p, pre, q, samp, small, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var { padding: 0px; margin: 0px; }
+table { border-collapse: collapse; border-spacing: 0px; }
+caption { text-align: left; }
+input, select { vertical-align: middle; font-size: 12px; color: rgb(102, 102, 102); outline: 0px none; }
+fieldset, img { border: 0px none; }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; }
+ol, ul { list-style: outside none none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+q::after, q::before { content: ""; }
+legend { display: none; }
+a { text-decoration: none; }
+.clearfix::after { content: ""; height: 0px; visibility: hidden; display: block; clear: both; }
+.clearfix {  }
+.clear { clear: both; }
+html { font-family: "微软雅黑"; font-size: 12px; }
+body { background: rgb(5,17,43) url("../images/banner.png")/*tpa=https://www.70911.com/images/back.png*/ no-repeat scroll center top / 100% auto; }
+* { box-sizing: border-box; }
+.fl { float: left; }
+.fr { float: right; }
+.blue { background: rgb(27,77,168) none repeat scroll 0% 0%; }
+.wathet { background: rgb(27,77,152) none repeat scroll 0% 0%; }
+.cred { color: red !important; }
+.cblue { color: rgb(57, 167, 252) !important; }
+.header { width: 1200px; margin: 10px auto; }
+.header .logo { float: left; width: 280px; }
+.header .logo img { width: 100%; }
+.header .link { float: right; margin: 45px 20px 0px 0px; }
+.header .link a, .header .link i { display: inline-block; vertical-align: middle; }
+.header .link a { color: rgb(255, 255, 255); }
+.header .link a:hover { text-decoration: underline; }
+.header .link label { margin: 0px 5px; }
+.header .link i { width: 15px; height: 15px; margin-right: 1px; background: rgba(0, 0, 0, 0) url("../images/icon.png")/*tpa=https://www.70911.com/images/icon.png*/ repeat scroll 15px -2px; }
+.header .link .live i { width: 24px; height: 20px; background: rgba(0, 0, 0, 0) url("../images/icon_live.png")/*tpa=https://www.70911.com/images/icon_live.png*/ no-repeat scroll center center; }
+.main { width: 1200px; margin: 0px auto; padding-bottom: 20px; }
+.main .row { width: 100%; margin: 0px auto 20px; }
+.main .tit-div { float: left; width: 16.6667%; padding: 0px 15px; }
+.main .tit-div .wrap { border-radius: 3px; box-sizing: border-box; }
+.main .tit-div .wrap.line1 { height: 120px; }
+.main .tit-div .container { width: 130px; margin: 0px auto; padding: 35px 0px; }
+.main .tit-div i { height: 54px; width: 54px; margin-right: 8px; background: rgba(0, 0, 0, 0) url("../images/icon2.png")/*tpa=https://www.70911.com/images/icon2.png*/ repeat scroll 0% 0%; float: left; }
+.main .tit-div span { color: rgb(255, 255, 255); font-weight: 900; font-size: 16px; line-height: 24px; display: inline-block; margin-top: 13px; }
+.main .tit-div .self span { margin-top: 2px; }
+.main .tit-div .icon_earth { background-position: 118px -1px; }
+.main .tit-div .icon_www { background-position: 179px -1px; }
+.main .tit-div .icon_bank { background-position: 305px -1px; }
+.main .tit-div .icon_inf { background-position: 242px -1px; }
+.main .main-div { float: left; width: 83.3333%; padding: 0px 15px; }
+.main .main-div .tabbox { font-size: 16px; float: left; height: 110px; padding: 0px 5px; width: 16.6667%; }
+.main .main-div .tabbox .links { height: 110px; }
+.main .main-div .tabbox a { display: block; height: 50px; border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 255, 255); color: rgb(51, 122, 183); overflow: hidden; }
+.main .main-div .tabbox a:hover { border: 1px solid rgb(51, 122, 183); text-decoration: underline; }
+.main .main-div .tabbox .second { margin-top: 10px; }
+.main .main-div .tabbox .container { width: 110px; margin: 0px auto; }
+.main .main-div .tabbox i { height: 20px; width: 19px; margin: 17px 1px 0px 0px; background: rgba(0, 0, 0, 0) url("../images/icon.png")/*tpa=https://www.70911.com/images/icon.png*/ repeat scroll 0% 0%; float: left; }
+.main .main-div .tabbox span { color: rgb(153, 153, 153); line-height: 50px; }
+.main .main-div .tabbox .icon_baidu { background-position: -19px -1px; }
+.main .main-div .tabbox .icon_youku { background-position: -79px -1px; }
+.main .main-div .tabbox .icon_qq { background-position: -136px -1px; }
+.main .main-div .tabbox .icon_jd { background-position: -209px -1px; }
+.main .main-div .tabbox .icon_fh { background-position: -154px -1px; }
+.main .main-div .tabbox .icon_12306 { background-position: -256px 0px; background-size: 733px auto; }
+.main .main-div .tabbox .icon_sohu { background-position: -306px -1px; }
+.main .main-div .tabbox .icon_xc { background-position: -323px -1px; }
+.main .main-div .tabbox .icon_163 { background-position: -480px -1px; }
+.main .main-div .tabbox .icon_4399 { background-position: -580px -1px; }
+.main .main-div .tabbox .icon_tb { background-position: -441px -1px; }
+.main .main-div .tabbox .icon_58 { background-position: -520px -1px; }
+.main .main-div .tabbox .icon_gs { background-position: 1px -1px; }
+.main .main-div .tabbox .icon_zs { background-position: -60px -1px; }
+.main .main-div .tabbox .icon_zg { background-position: -98px -1px; }
+.main .main-div .tabbox .icon_gd { background-position: -212px -2px; background-size: 720px auto; }
+.main .main-div .tabbox .icon_js { background-position: -381px -1px; }
+.main .main-div .tabbox .icon_xy { background-position: -245px -1px; }
+.main .main-div .tabbox .icon_ny { background-position: -264px -1px; }
+.main .main-div .tabbox .icon_hx { background-position: -342px -1px; }
+.main .main-div .tabbox .icon_yz { background-position: -421px -1px; }
+.main .main-div .tabbox .icon_jt { background-position: -561px 0px; }
+.main .main-div .tabbox .icon_ms { background-position: -401px -1px; }
+.main .main-div .tabbox .icon_gf { background-position: -501px -1px; }
+.main .main-div .tabbox .icon_sina { background-position: -40px -1px; }
+.main .main-div .tabbox .icon_lh { background-position: -117px -1px; }
+.main .main-div .tabbox .icon_rm { background-position: -173px -1px; }
+.main .main-div .tabbox .icon_zh {  }
+.main .main-div .tabbox .icon_cctv { background-position: -362px -1px; }
+.main .main-div .tabbox .icon_xh { background-position: 53px -1px; }
+.main .main-div .tabbox .icon_hq { background-position: -542px -1px; }
+.main .main-div .tabboxX2 { float: left; padding: 0px 5px; width: 16.6667%; font-size: 17px; position: relative; }
+.main .main-div .tabboxX2 .container { height: 120px; border-radius: 3px; border: 1px solid rgb(221, 221, 221); line-height: 59px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; text-align: center; }
+.main .main-div .tabboxX2 .container:hover { border-color: rgb(57, 167, 252); }
+.main .main-div .tabboxX2 a { color: rgb(57, 167, 252); }
+.main .main-div .tabboxX2 i { height: 20px; width: 19px; margin: 22px 0px 0px; background: rgba(0, 0, 0, 0) url("../images/icon.png")/*tpa=https://www.70911.com/images/icon.png*/ repeat scroll 34px -1px; float: left; }
+.main .main-div .tabboxX2 .t3 { line-height: 44px; }
+.main .main-div .tabboxX2 .t3 i { margin: 13px 0px 0px; }
+.main .main-div .tabboxX2 .tl { border-top: 1px solid rgb(221, 221, 221); }
+.main .main-div .tabboxX2 .tmid { line-height: 30px; font-size: 15px; }
+.main .main-div .tabboxX2 .line1 { padding: 0px 28px; text-align: center; }
+.main .main-div .tabboxX2 .speed { color: rgb(170, 170, 170); font-size: 15px; }
+.main .main-div .tabboxX2.box1 a { font-size: 15px; }
+.main .main-div .tabboxX2.box1 .t3 { color: rgb(153, 153, 153); }
+.footer { height: 20px; width: 100%; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center; position: fixed; bottom: 0px; line-height: 20px; }
+@media (max-width: 1200px) {
+  .header, .main { width: 800px; }
+  .main .tit-div { width: 22%; }
+  .main .main-div { width: 78%; }
+  .main .main-div .tabboxX2 { font-size: 16px; }
+  .main .main-div .tabboxX2 i { display: none; }
+  .main .main-div .tabboxX2 .line1 { padding: 0px; }
+  .main .main-div .tabboxX2 .tmid { font-size: 12px; }
+  .main .main-div .tabboxX2 .t3 { font-size: 14px; }
+  .main .main-div .tabbox { font-size: 14px; }
+  .main .main-div .tabbox .container { width: 80px; }
+}
+@media (max-width: 800px) {
+  body { background-size: auto auto; }
+  .header, .main { width: 600px; }
+  .main .main-div, .main .tit-div { width: 100%; }
+  .main .tit-div .wrap { height: 80px; }
+  .main .tit-div .wrap .container { padding: 16px 0px; }
+  .main .tit-div .wrap.line1 { height: auto; }
+  .main .main-div .tabboxX2 { width: 50%; font-size: 18px; }
+  .main .main-div .tabboxX2 i { display: block; }
+  .main .main-div .tabboxX2 .line1 { padding: 0px 80px; }
+  .main .main-div .tabboxX2 .container { margin-top: 10px; }
+  .main .main-div .tabboxX2 .t3 { font-size: 16px; }
+  .main .main-div .tabboxX2 .tmid { font-size: 16px; }
+  .main .main-div .tabbox { width: 50%; margin-top: 10px; font-size: 16px; }
+  .main .main-div .tabbox .container { width: 110px; }
+  .footer { position: relative; }
+}
+@media (max-width: 600px) {
+  .header, .main { width: 400px; }
+  .header .logo { float: none; margin: 0px auto; width: 250px; }
+  .header .link { margin: 0px; float: none; text-align: center; font-size: 16px; }
+  .main .main-div .tabboxX2 .line1 { padding: 0px 38px; }
+  .main .main-div .tabboxX2 .t3 { font-size: 16px; }
+  .main .main-div .tabboxX2 .tmid { font-size: 14px; }
+}
+@media (max-width: 400px) {
+  .header, .main { width: 320px; }
+  .header .logo { float: none; margin: 0px auto; width: 210px; }
+  .header .link { margin: 0px; float: none; text-align: center; font-size: 14px; }
+  .main .main-div .tabboxX2 .line1 { padding: 0px 20px; }
+  .main .main-div .tabboxX2 .t3 { font-size: 15px; }
+  .main .main-div .tabboxX2 .tmid { font-size: 13px; }
+}
